@@ -38,4 +38,4 @@ def scores():
             return "fail"
     else:
         scores = Score.select().dicts()
-        return jsonify({'rows':list(scores)})
+        return jsonify({'Score':list(scores)})
